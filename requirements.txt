@@ -1,0 +1,11 @@
+# MTProto client (maintained fork of Pyrogram)
+pyrogrammod>=2.4.0
+TgCrypto>=1.2.5
+# Voice-chat engine
+py-tgcalls>=3.0.0,<4.0.0
+# YouTube search / metadata / stream resolving
+yt-dlp>=2025.1.1
+# Env handling
+python-dotenv>=1.0.1
+# Heroku / some hosts force an old SQLite; harmless on modern images
+pysqlite3-binary; platform_system == "Linux"

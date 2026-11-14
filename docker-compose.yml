@@ -1,0 +1,10 @@
+services:
+  stranger-music:
+    build: .
+    container_name: stranger-music
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./downloads:/app/downloads
+    # 512 MB RAM is usually enough; bump if you use /vplay a lot.
+    mem_limit: 1g
